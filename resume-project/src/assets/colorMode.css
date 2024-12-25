@@ -1,0 +1,42 @@
+[data-bs-theme=colorMode] {
+  --bs-body-color: var(--bs-white-color);
+  --bs-body-color-rgb: to-rgb(rgb(255, 255, 255));
+  --bs-body-bg: var(--bs-primary-color);
+  --bs-body-bg-rgb: to-rgb(rgb(254, 134, 134));
+  --bs-tertiary-bg: rgb(253.5819672131, 83.4180327869, 83.4180327869);
+}
+[data-bs-theme=colorMode] .dropdown-menu {
+  --bs-dropdown-bg: rgb(144.5, 134, 134);
+  --bs-dropdown-link-active-bg: rgb(24.4378698225, 93.5621301775, 93.5621301775);
+}
+[data-bs-theme=colorMode] .btn-secondary {
+  --bs-btn-bg: rgb(34.825, 133.33, 133.33);
+  --bs-btn-border-color: rgba(255, 255, 255, 0.25);
+  --bs-btn-hover-bg: rgb(29.5439349112, 113.1110650888, 113.1110650888);
+  --bs-btn-hover-border-color: rgba(255, 255, 255, 0.25);
+  --bs-btn-active-bg: rgb(24.2628698225, 92.8921301775, 92.8921301775);
+  --bs-btn-active-border-color: rgba(255, 255, 255, 0.5);
+  --bs-btn-focus-border-color: rgba(255, 255, 255, 0.5);
+  --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba($white-color, .2);
+}
+[data-bs-theme=colorMode] .navbar {
+  background-color: rgb(254, 134, 134);
+  color: rgb(255, 255, 255);
+}
+[data-bs-theme=colorMode] .navbar .navbar-brand, [data-bs-theme=colorMode] .navbar .nav-link {
+  color: rgb(255, 255, 255);
+}
+[data-bs-theme=colorMode] .navbar .nav-link:hover {
+  color: rgb(0, 123, 255);
+}
+[data-bs-theme=colorMode] .card {
+  background-color: rgb(254, 134, 134);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(35, 134, 134);
+}
+[data-bs-theme=colorMode] .modal-content {
+  background-color: rgb(35, 134, 134);
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=colorMode.css.map */
