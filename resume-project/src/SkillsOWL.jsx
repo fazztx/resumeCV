@@ -1,17 +1,24 @@
 import Card from 'react-bootstrap/Card';
 
 import allSkills from './assets/allSkills.js'
-import Carousel from 'react-bootstrap/Carousel';
 
-const Skills = () => {
+import OwlCarousel from 'react-owl-carousel'; 
+import 'owl.carousel/dist/assets/owl.carousel.css'; 
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+// https://www.npmjs.com/package/react-owl-carousel
+
+const SkillsOWL = () => {
 
     return (
         <>
         <div style={{ backgroundColor: 'black'}}>
-            <Carousel>
+            <OwlCarousel className="owl-theme" loop={true} margin={10} items={5} dots={false} autoplay={true} 
+            autoplayTimeout={3000} autoplaySpeed={7000} autoplayHoverPause={true} 
+            responsive={{ 0: { items: 1 }, 600: { items: 3 }, 1000: { items: 5 } }}> 
                 {allSkills && allSkills.map((eachSkill, index) => (
-                    <Carousel.Item interval={3000}>
-                        <Card style={{ width: '140px'}} key={index} border="light" className="text-center">
+                    <div className='item' key={index}>
+                        <Card style={{ width: '138px'}} key={index} border="light" bg="blackBackground" text="white" className="text-center">
                             <Card.Img style={{ height: '100px'}} variant="top" src={eachSkill.src} />
                             <Card.Body>
                                 <Card.Title>{eachSkill.name}</Card.Title>
@@ -21,12 +28,12 @@ const Skills = () => {
                         </Card.Text> */}
                             </Card.Body>
                         </Card>
-                    </Carousel.Item>
+                    </div>
                 ))}
-            </Carousel>
+            </OwlCarousel>
             </div>
         </>
     );
 }
 
-export default Skills;
+export default SkillsOWL;

@@ -5,11 +5,16 @@ import Col from 'react-bootstrap/Col';
 import Header from './Header.jsx';
 import './HomePage.css'
 
-import Skills from './Skills.jsx';
+// import Skills from './Skills.jsx';
+import Work from './Work.jsx';
+
 
 import Image from 'react-bootstrap/Image';
 
 import AboutMe from './AboutMe.jsx';
+import SkillsOWL from './SkillsOWL.jsx';
+import Education from './Education.jsx';
+import ContactMe from './ContactMe.jsx';
 
 const HomePage = () => {
 
@@ -18,30 +23,66 @@ const HomePage = () => {
         <>
 
             <Container fluid='true'>
-                    <Row>
-                        <Col>
-                            {/* COL 1 of 1 */}
-                            <Header/>
-                        </Col>
-                    </Row>
 
-                    <Row>
+                <Header />
+
+                <Row>
                         <Col>
-                            <Image className="spiralImg" src="./res/spiralCode.gif" fluid='true'/>
+                            <Image className="spiralImg" src="./res/spiralCode.gif" fluid='true' />
                         </Col>
                         <Col xs={8}>
-                            <AboutMe/>
+                            <AboutMe />
                         </Col>
-                    </Row>
+                </Row>
 
-                    <Row>
-                        <Skills/>
+                <Row>
+                    <div className='firstTitleSection'>
+                        <section id='skills'>
+                            <span className='gradientText'>Technical Skills</span>
+                        </section>
+                    </div>
+                </Row>
+                <Row>
+                    <SkillsOWL />
+                </Row>
 
-                    </Row>
-                        
+                <Row>
+                    <div className='titleSection'>
+                        <section id='education'>
+                            <span className='gradientText'>Education</span>
+                        </section>
+                    </div>
+                </Row>
+                <Row className='edRow'>
+                    <Education />
+                </Row>
+
+                <Row>
+                    <div className='titleSection'>
+                        <section id='work'>
+                            <span className='gradientText'>Work Experience</span>
+                        </section>
+                    </div>
+                </Row>
+                <Row className='edRow'>
+                    <Work />
+                </Row>
+
+                {/* <Row>
+                    <div className='titleSection'>
+                        <section id='contactMe'>
+                            <span className='gradientText'>Contact Me</span>
+                        </section>
+                    </div>
+                </Row> */}
+                {/* <Row >
+                    <ContactMe/>
+                </Row> */}
+
+
             </Container >
-            
-            
+
+
 
         </>
     );

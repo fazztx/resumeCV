@@ -7,10 +7,10 @@ const Header = () => {
 
     return (
         <>
-            <Navbar bg='light' className='customHeader'>
-                <Navbar.Brand id='myName'>Juan Gabriel</Navbar.Brand>
+            <Navbar bg='gradientBackground' className='customHeader' variant='dark' expand='lg'>
+                <Navbar.Brand id='myName'>Juan Gabriel Barbosa Toro</Navbar.Brand>
                 <Nav className="links">
-                    <Stack direction="horizontal" gap={3}>
+                    <Stack direction="horizontal" gap={2}>
                         <Nav.Link href="#aboutme">About Me</Nav.Link>
                         <div className="vr" />
                         <Nav.Link href="#skills">Skills</Nav.Link>
