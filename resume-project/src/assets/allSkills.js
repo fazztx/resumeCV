@@ -9,7 +9,7 @@ const allSkills = [
     },
     {
         name: 'Javascript',
-        src: './res/javascriptIcon.png'
+        src: './res/javascriptIconInv.png'
     },
     {
         name: 'Node Js',
@@ -31,6 +31,10 @@ const allSkills = [
         name: 'CSS',
         src: './res/CSS3.png'
     },
+    {
+        name: 'Figma',
+        src: './res/figmaIcon.png'
+    }
 ];
 
 export default allSkills

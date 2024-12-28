@@ -11,15 +11,15 @@ const Header = () => {
                 <Navbar.Brand id='myName'>Juan Gabriel Barbosa Toro</Navbar.Brand>
                 <Nav className="links">
                     <Stack direction="horizontal" gap={2}>
-                        <Nav.Link href="#aboutme">About Me</Nav.Link>
-                        <div className="vr" />
                         <Nav.Link href="#skills">Skills</Nav.Link>
                         <div className="vr" />
                         <Nav.Link href="#education">Education</Nav.Link>
                         <div className="vr" />
                         <Nav.Link href="#work">Work Experience</Nav.Link>
                         <div className="vr" />
-                        <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                        <Nav.Link href="#portfolio">Projects</Nav.Link>
+                        <div className="vr" />
+                        <Nav.Link href="#contactMe">Contact Me</Nav.Link>
                     </Stack>
                 </Nav>
             </Navbar>

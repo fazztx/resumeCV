@@ -12,6 +12,7 @@ import Work from './Work.jsx';
 import Image from 'react-bootstrap/Image';
 
 import AboutMe from './AboutMe.jsx';
+import Portfolio from './Portfolio.jsx';
 import SkillsOWL from './SkillsOWL.jsx';
 import Education from './Education.jsx';
 import ContactMe from './ContactMe.jsx';
@@ -28,9 +29,9 @@ const HomePage = () => {
 
                 <Row>
                         <Col>
-                            <Image className="spiralImg" src="./res/spiralCode.gif" fluid='true' />
+                            <Image md={6} className="spiralImg" src="./res/spiralCode.gif" fluid='true' />
                         </Col>
-                        <Col xs={8}>
+                        <Col xs={12} md={6}>
                             <AboutMe />
                         </Col>
                 </Row>
@@ -68,16 +69,27 @@ const HomePage = () => {
                     <Work />
                 </Row>
 
-                {/* <Row>
+                <Row>
+                    <div className='titleSection'>
+                        <section id='portfolio'>
+                            <span className='gradientText'>Projects</span>
+                        </section>
+                    </div>
+                </Row>
+                <Row className='portRow'>
+                    <Portfolio/>
+                </Row>
+
+                <Row>
                     <div className='titleSection'>
                         <section id='contactMe'>
                             <span className='gradientText'>Contact Me</span>
                         </section>
                     </div>
-                </Row> */}
-                {/* <Row >
+                </Row>
+                <Row >
                     <ContactMe/>
-                </Row> */}
+                </Row>
 
 
             </Container >

@@ -1,17 +1,18 @@
 import Carousel from 'react-bootstrap/Carousel';
+import './ContactMe.css';
 
 const ContactMe = () => {
     return (
         <>
-            <Carousel>
-                <Carousel.Item>
-                
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+            <div className='contactSquare'>
+                <div className='outSq'>
+                    <div className='sqText'>
+                        787-951-1551<br/>
+                        <span style={{color: 'gray', fontSize:40}}>Mayaguez / San Juan <br/>
+                        juan.gabriel.barbosa@outlook.com </span>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

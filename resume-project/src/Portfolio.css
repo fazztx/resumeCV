@@ -1,0 +1,46 @@
+.block {
+    margin-bottom: 20px;
+}
+
+.eachP {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.custom-accordion .accordion-button {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px 30px; /* Increased padding for larger area */
+    font-size: 1.5rem; /* Larger font size */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Maintain space for the arrow */
+}
+
+.custom-accordion .accordion-button::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3e%3cpath d='M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z' fill='white'/%3e%3c/svg%3e");
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
+
+.custom-accordion .accordion-button:hover {
+    background-color: #000000; /* Darker shade on hover */
+}
+
+.custom-accordion .accordion-body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px 30px; /* Increased padding for content */
+    font-size: 1.25rem; /* Slightly larger font size for body */
+    border-top: 1px solid #ddd;
+}
