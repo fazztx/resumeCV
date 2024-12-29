@@ -6,12 +6,13 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
+    /* position: absolute; */
 }
 
 .custom-accordion .accordion-button {
     background-color: #000; /* Black background */
     color: #fff; /* White text color */
-    padding: 20px 30px; /* Increased padding for larger area */
+    padding: 20px 30px; /*Increased padding for larger area*/
     font-size: 1.5rem; /* Larger font size */
     cursor: pointer;
     display: flex;
@@ -40,7 +41,8 @@
 .custom-accordion .accordion-body {
     background-color: #000; /* Black background */
     color: #fff; /* White text color */
-    padding: 20px 30px; /* Increased padding for content */
+    padding: 20px 30px; 
+    /* Increased padding for content */
     font-size: 1.25rem; /* Slightly larger font size for body */
     border-top: 1px solid #ddd;
 }

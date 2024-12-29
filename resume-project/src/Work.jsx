@@ -9,10 +9,10 @@ const Work = () => {
     return (
         <>
 
-                <Col>
+                <Col md={{ span: 6, offset: 3 }}>
                     <ListGroup as={"ul"} className="workInfo">
                         <ListGroupItem className="eachLi" variant="light"><span className="gradientInvText">QA Training Support Specialist</span></ListGroupItem>
-                        <ListGroupItem className="eachLi" variant="light">February 2022 – December 2024</ListGroupItem>
+                        <ListGroupItem className="eachLi" variant="light">February 2022 – January 2025</ListGroupItem>
                         <ListGroupItem className="eachLi" variant="light">{description}</ListGroupItem>
                     </ListGroup>
                 </Col>

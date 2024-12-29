@@ -1,33 +1,20 @@
 /* HomePage.css */
+/* Various CSS libs: https://react-ui-libraries.vercel.app/ */
+
 .customHeader {
     height: 100px;
 }
-/* https://react-ui-libraries.vercel.app/ */
-.customHeader .navbar-brand, .customHeader .nav-link { color: rgb(0, 0, 0); /* Change the font color to white */ }
 
-cursor{
-    
+.customHeader .navbar-brand, .customHeader .nav-link { 
+    color: rgb(0, 0, 0); 
+    /* Change the font color to white  */
 }
-
-.nav-link {
-    color: red;
-}
-
-
-.bg-gradientBackground {
-    background-image: linear-gradient(45deg, rgb(254, 134, 134), rgb(35, 134, 134))
-}
-
-.bg-blackBackground{
-    background-color: black;
-}
-
 
 .firstTitleSection{
     background-color: rgb(0, 0, 0);
     text-align: center;
     font-size: 80px;
-    margin-top: -53px;
+    /* margin-top: -53px; */
 }
 
 .titleSection{
@@ -49,84 +36,19 @@ cursor{
     color: black;
 }
 
-.highlightName{
-    color: rgb(0, 149, 255);
-}
-.aboutMe{
-    /* justify-content:center; */
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    /* margin-top: 50px; */
-    margin-left: -229px; 
-    /* padding-left: 737px; */
-    /* background-color: rgb(254, 134, 134);     */
-    /* rgb(35, 134, 134)  */
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    text-rendering: optimizeLegibility;
-}
-
-.salute{
-    font-size: 80px;
-}
-
-.intro{
-    font-size: 35px;
-    justify-content: left;
-    /* padding-top: 50px; */
-}
-
-.spiralImg{
-    /* margin-top: -50px;
-    margin-left: -70px; */
-}
-
-.links {
-    font-size: 25px;
-    padding-left: 450px;
-    /* background-color: brown; */
-}
-#myName{
-    font-size: 40px;
-    /* padding-left: 70px; */
-    margin-left: 10px;
-    margin-right: -150px;
-    /* background-color: brown; */
-
-}
-.edRow{
-    background-color: black;
-}
-
-.edInfo{
-    padding-left: 120px;
-    padding-right: 120px;
-    /* margin-left: -100px;
-    margin-right: -100px; */
-    /* background-color: black; */
-}
-
-.workInfo{
-    padding-left: 420px;
-    padding-right: 420px;
-    justify-content: center;
-}
-
-.eachLi{
-    font-size: 26px;
-    background-color: black;
-}
-
-.portRow{
-    display:block;
-    justify-content: center;
-    padding-left: 420px;
-    padding-right: 420px;
-    background-color: black;
-}
-
 #contactMe{
     /* To compensate margin from each project */
     background-color: rgb(0, 0, 0);
     margin-top: -20px; 
 }
 
+/* To debug section */
+.bgbrand {
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.bgcol{
+    /* background-color: rgb(0, 255, 0); */
+    padding-left: 80px;
+}
+/* End of To debug section */

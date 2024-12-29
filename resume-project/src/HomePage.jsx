@@ -24,16 +24,19 @@ const HomePage = () => {
         <>
 
             <Container fluid='true'>
-
-                <Header />
-
                 <Row>
-                        <Col>
-                            <Image md={6} className="spiralImg" src="./res/spiralCode.gif" fluid='true' />
-                        </Col>
-                        <Col xs={12} md={6}>
+                    <Header />
+                </Row>
+                <Row>
+                    <Col sm={12} md={4} className="d-none d-md-inline-block">
+                        <Image className="spiralImg" src="./res/spiralCode.gif" fluid='true'/>
+                    </Col>
+                    <Col sm={{ span: 12, offset: 0 }} md={{ span: 8, offset: 0 }}>
+                        <section id='aboutMe'>
                             <AboutMe />
-                        </Col>
+                        </section>
+                    </Col>
+
                 </Row>
 
                 <Row>
@@ -54,7 +57,7 @@ const HomePage = () => {
                         </section>
                     </div>
                 </Row>
-                <Row className='edRow'>
+                <Row>
                     <Education />
                 </Row>
 
@@ -65,7 +68,7 @@ const HomePage = () => {
                         </section>
                     </div>
                 </Row>
-                <Row className='edRow'>
+                <Row>
                     <Work />
                 </Row>
 
@@ -77,7 +80,9 @@ const HomePage = () => {
                     </div>
                 </Row>
                 <Row className='portRow'>
-                    <Portfolio/>
+                {/* sm={{ span: 12, offset: 0 }}
+                md={{ span: 6, offset: 3 }}> */}
+                    <Portfolio />
                 </Row>
 
                 <Row>
@@ -88,7 +93,7 @@ const HomePage = () => {
                     </div>
                 </Row>
                 <Row >
-                    <ContactMe/>
+                    <ContactMe />
                 </Row>
 
 

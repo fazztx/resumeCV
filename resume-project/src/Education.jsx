@@ -2,7 +2,7 @@ import Stack from "react-bootstrap/esm/Stack";
 import allEd from './assets/allEd.js';
 import Col from 'react-bootstrap/Col';
 
-
+import './Education.css'
 
 
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -14,7 +14,7 @@ const Education = () => {
 
             {allEd && allEd.map((eachEd, index) => (
 
-                <Col>
+                <Col md={{ span: 4, offset: 1+index }}> 
                     <ListGroup as={"ul"} key={index} className="edInfo">
                         <ListGroupItem className="eachLi" variant="light"><span className="gradientInvText">{eachEd.title}</span></ListGroupItem>
                         <ListGroupItem className="eachLi" variant="light">{eachEd.university}</ListGroupItem>
