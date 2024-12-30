@@ -42,6 +42,10 @@
     margin-top: -20px; 
 }
 
+.divBck{
+    background-image: linear-gradient(45deg, rgb(254, 134, 134), rgb(35, 134, 134))
+}
+
 /* To debug section */
 .bgbrand {
     /* background-color: rgb(255, 0, 0); */

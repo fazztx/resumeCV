@@ -4,6 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import allProjects from './assets/allProjects.js';
 import './Portfolio.css';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const Portfolio = () => {
     return (
@@ -20,6 +21,7 @@ const Portfolio = () => {
                                 <Accordion.Item eventKey={index}>
                                     <Accordion.Header className="custom-accordion-header"><span className="gradientInvText">{eachProject.name}</span></Accordion.Header>
                                     <Accordion.Body className="custom-accordion-body">
+                                        <Image className="pictureAcc" src={eachProject.picture} fluid/>
                                         <ul>
                                             {eachProject.description && eachProject.description.map((eachD, index) => (
                                                 <li key={index}>{eachD}</li>

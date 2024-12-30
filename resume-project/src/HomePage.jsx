@@ -92,7 +92,7 @@ const HomePage = () => {
                         </section>
                     </div>
                 </Row>
-                <Row >
+                <Row className='divBck'>
                     <ContactMe />
                 </Row>
 

@@ -20,3 +20,22 @@
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+.custom-card-body, .custom-card-footer{
+    /* background-color: rgb(0, 0, 0);  */
+    color: black;
+}
+
+.btn{
+    background-color: rgb(0, 0, 0);
+}
+
+/*
+.btn:hover{
+    background-image: linear-gradient(45deg, rgb(254, 134, 134), rgb(35, 134, 134));
+} */
+
+.custom-card-text{
+    font-size: 25px;
+    /* color: rgb(255, 255, 255); */
+}
