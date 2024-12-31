@@ -17,6 +17,8 @@ import SkillsOWL from './SkillsOWL.jsx';
 import Education from './Education.jsx';
 import ContactMe from './ContactMe.jsx';
 
+import spiralCode from '../res/spiralCode.gif'; // Import the image
+
 const HomePage = () => {
 
 
@@ -29,7 +31,7 @@ const HomePage = () => {
                 </Row>
                 <Row>
                     <Col sm={12} md={4} className="d-none d-md-inline-block">
-                        <Image className="spiralImg" src="./res/spiralCode.gif" fluid='true'/>
+                        <Image className="spiralImg" src={spiralCode} fluid='true'/>
                     </Col>
                     <Col sm={{ span: 12, offset: 0 }} md={{ span: 8, offset: 0 }}>
                         <section id='aboutMe'>
